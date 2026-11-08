@@ -1,0 +1,203 @@
+.ventas-container {
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+
+.module-title {
+  text-align: center;
+  color: var(--xtreme-yellow);
+  margin-bottom: 30px;
+  font-style: italic;
+  font-size: 2.5rem;
+}
+
+.card {
+  background-color: #ffffff;
+  color: var(--xtreme-blue);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+  border-bottom: 3px solid var(--xtreme-yellow);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.input-row {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+input[type="text"], input[type="email"] {
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.form-grid button {
+  grid-column: span 2;
+}
+
+.btn-yellow {
+  background-color: var(--xtreme-yellow);
+  color: var(--xtreme-blue);
+  border: none;
+  padding: 12px 25px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s;
+}
+
+.btn-yellow:hover {
+  transform: scale(1.02);
+}
+
+.btn-large {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 1.2rem;
+}
+
+/* Sección de Modalidad y Atracciones */
+.modality-section { margin-bottom: 20px; }
+.radio-group { display: flex; gap: 20px; margin-top: 10px; }
+
+.attractions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.attraction-card {
+  border: 2px solid #eee;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #f9f9f9;
+}
+
+.attraction-card:hover {
+  border-color: var(--xtreme-blue);
+  background: #eef2ff;
+}
+
+/* Resumen y Pago */
+.summary {
+  background: #f0f4ff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.total {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--xtreme-red);
+}
+
+.payment-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.payment-options button {
+  flex: 1;
+  padding: 15px;
+  border: 2px solid #ccc;
+  background: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.payment-options button.active {
+  border-color: var(--xtreme-blue);
+  background: var(--xtreme-blue);
+  color: white;
+}
+
+/* Éxito */
+.success-card { text-align: center; }
+.ticket-receipt {
+  background: #f9f9f9;
+  border: 2px dashed #ccc;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.qr-box {
+  width: 150px;
+  height: 150px;
+  background: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+  border-radius: 10px;
+  font-family: monospace;
+}
+
+.whatsapp-notice {
+  color: #25D366;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+}
+/* ... tus estilos anteriores ... */
+
+.qr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px;
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+.qr-container p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--xtreme-blue);
+}
+
+.api-notice {
+  color: #f39c12;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.whatsapp-status {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.success-text {
+  color: #25D366; /* Verde WhatsApp */
+}

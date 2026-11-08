@@ -1,0 +1,19 @@
+:root {
+  --xtreme-blue: #0B2C6F;
+  --xtreme-yellow: #FFD100;
+  --xtreme-white: #FFFFFF;
+  --xtreme-red: #E3000F;
+  --xtreme-green: #008A3E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif; /* Puedes cambiarla por una fuente más gruesa como 'Montserrat' */
+}
+
+body {
+  background-color: var(--xtreme-blue);
+  color: var(--xtreme-white);
+}

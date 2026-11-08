@@ -1,0 +1,14 @@
+.eventos-container {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+
+.resumen-pago {
+  background: #f0f4ff;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 5px solid var(--xtreme-yellow);
+  margin: 10px 0;
+}
