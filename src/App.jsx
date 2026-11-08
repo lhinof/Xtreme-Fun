@@ -13,7 +13,7 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <AppRouter />
     </BrowserRouter>
   );
@@ -24,7 +24,6 @@ function AppRouter() {
   const [cart, setCart] = useState([]);
   const [invoice, setInvoice] = useState(null);
   const navigate = useNavigate();
-
   const handleCompleteLogin = (datosCliente) => {
     setCliente(datosCliente);
     navigate('/'); 
@@ -75,7 +74,7 @@ function AppRouter() {
 function FlujoIngresoEstilizado({ onCompleteLogin }) {
   const [paso, setPaso] = useState('ingresoCI');
   const [ciIngresado, setCiIngresado] = useState('');
-  
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     ci: '',
     nombre: '',
@@ -210,12 +209,12 @@ function FlujoIngresoEstilizado({ onCompleteLogin }) {
   const fechaHoy = new Date().toLocaleDateString('es-ES');
 
   return (
-    <div className="app-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', padding: '20px', position: 'relative' }}>
+    <div className="app-container" >
       
       {/* BOTÓN SUPERIOR DERECHO: PERSONAL */}
       <div style={{ position: 'absolute', top: '20px', right: '20px' }}>
         <button 
-          onClick={() => window.location.href = '/control'}
+          onClick={() => navigate('/control')}
           style={{ background: '#222', color: '#FFD100', border: '1px solid #FFD100', padding: '8px 16px', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer', fontSize: '13px' }}
         >
           👨‍💼 Personal (Control de Acceso)
